@@ -1,8 +1,20 @@
 public class Array {
-    public static void main(String[] args) {
-        int[] p = new int [100];
-        p[1]=0;
+    static void printNumbers() {
+        int[] array = new int[50];
+        int k = 0;
+        for (int i = 0; i < 100; i++) {
+            if (i % 2 == 1) {
+                array[k] = i;
+                k++;
+            }
+        }
+        for (int i = 0; i < k; i++) {
+            System.out.println(array[i]);
+        }
+    }
 
-            System.out.println(p[5]);
+    public static void main(String[] args) {
+        printNumbers();
     }
 }
+
